@@ -1,0 +1,44 @@
+/* The Lessons section. Everything is nested under .lesson-lecs. */
+.lesson-lecs { --left: 300px; }
+.lesson-lecs .lp-filter .fx { grid-template-columns: 1fr; gap: 6px; margin-bottom: 14px; }
+.lesson-lecs .lp-filter .fxl { padding-top: 0; }
+.lesson-lecs .lp-toc { border-top: 1px solid var(--bd); padding-top: 10px; }
+.lesson-lecs .lp-toc summary { font-size: 12px; font-weight: 600; color: var(--tsec); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; margin: 0 0 6px; }
+.lesson-lecs .lp-ti { margin: 0 0 8px; }
+.lesson-lecs .lp-ti > a { display: block; font-weight: 600; font-size: 14px; color: var(--tpri); text-decoration: none; padding: 3px 8px; border-radius: 6px; border-left: 3px solid transparent; }
+.lesson-lecs .lp-ti.cur > a { border-left-color: var(--ba); background: var(--hl); }
+.lesson-lecs .lp-ti ul { list-style: none; margin: 2px 0 0; padding: 0 0 0 14px; display: none; }
+.lesson-lecs .lp-ti.cur ul { display: block; }
+.lesson-lecs .lp-ti li a { display: block; font-size: 13px; color: var(--tsec); text-decoration: none; padding: 2px 8px; border-radius: 5px; line-height: 1.4; }
+.lesson-lecs .lp-toc a:hover { background: var(--hl); color: var(--tpri); }
+.lesson-lecs .lp-lesson { padding: 0 0 18px; margin: 0 0 22px; border-bottom: 2px solid var(--bd); }
+.lesson-lecs .lp-lesson:last-child { border-bottom: none; }
+.lesson-lecs .lp-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 14px; padding: 4px 0 10px; border-bottom: 1px solid var(--bd); margin: 0 0 6px; scroll-margin-top: 4px; }
+.lesson-lecs .lp-head h2 { margin: 0; font-size: 22px; font-weight: 600; line-height: 1.3; }
+.lesson-lecs .lp-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.lesson-lecs .lp-badge { font-size: 12px; font-weight: 600; padding: 2px 9px; border-radius: 999px; border: 1px solid var(--ba); color: var(--tacc); }
+.lesson-lecs .lp-go { font-size: 13px; padding: 4px 10px; text-decoration: none; display: inline-block; }
+.lesson-lecs .lp-lesson { scroll-margin-top: 6px; }
+.lesson-lecs .gtext h3 { scroll-margin-top: 6px; }
+.lesson-lecs .lp-missing { font-size: 14px; border: 1px dashed var(--bs); border-radius: 10px; padding: 10px 14px; margin: 0 0 18px; color: var(--tsec); }
+.lesson-lecs .lp-missing b { color: var(--tpri); }
+.lesson-lecs .lp-empty { text-align: center; padding: 40px 10px; }
+@media (max-width: 899px) {
+  .lesson-lecs .lp-toc { margin: 0 0 16px; border: 1px solid var(--bd); border-radius: 10px; padding: 8px 12px; }
+  .lesson-lecs .lp-toc summary { margin: 0; }
+  .lesson-lecs .lp-toc[open] summary { margin-bottom: 8px; }
+}
+@media (max-width: 600px) {
+  .lesson-lecs .lp-head h2 { font-size: 19px; }
+}
+.lesson-lecs a.lp-go { color: var(--tpri); background: var(--btn); border: 1px solid var(--bs); border-radius: 8px; font-weight: 600; }
+.lesson-lecs a.lp-go:hover { background: var(--btnh); }
+.lesson-lecs .lp-filter .chip { font-size: 12.5px; padding: 4px 10px; }
+
+.lesson-lecs .lp-fbox > summary { font-size: 12px; font-weight: 600; color: var(--tsec); text-transform: uppercase; letter-spacing: .04em; cursor: pointer; margin: 0 0 10px; }
+@media (min-width: 900px) { .lesson-lecs .lp-fbox > summary { pointer-events: none; list-style: none; } .lesson-lecs .lp-fbox > summary::-webkit-details-marker { display: none; } }
+@media (max-width: 899px) {
+  .lesson-lecs .lp-fbox { border: 1px solid var(--bd); border-radius: 10px; padding: 8px 12px; margin: 0 0 10px; }
+  .lesson-lecs .lp-fbox > summary { margin: 0; font-size: 13px; text-transform: none; letter-spacing: 0; color: var(--tpri); }
+  .lesson-lecs .lp-fbox[open] > summary { margin-bottom: 10px; }
+}
